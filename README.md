@@ -1,41 +1,29 @@
-# tailLogger (tailloggerfront)
+## Description
 
-logger
+Log file reader over WEB (frontend).
+Reading a file is similar to the principles of the tail -f -n xxx utility
 
-## Install the dependencies
+## NodeJs version
+NodeJs v20.15.1
+
+## Installation
+
 ```bash
-yarn
-# or
-npm install
+$ yarn install
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+## Running the app (dev mode)
+
+run backend first on http://localhost:6200
 ```bash
-quasar dev
+$ yarn dev
 ```
-
-
-### Lint the files
+open URL http://localhost:9000
+## Static build generate
 ```bash
-yarn lint
-# or
-npm run lint
+$ yarn build
 ```
+Static generate in dist/spa
+## Support
 
-
-### Format the files
-```bash
-yarn format
-# or
-npm run format
-```
-
-
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
+monkeyhouse@mail.ru

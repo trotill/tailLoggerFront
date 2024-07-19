@@ -12,7 +12,6 @@ export function Logger() {
   }
   function reInit(fileName: string, countLast: number) {
     logList.value = [];
-
     eventSource?.removeEventListener(sessionId, handler);
     eventSource?.close();
     sessionId = `${Date.now() + Math.trunc(Math.random() * 1000)}`;

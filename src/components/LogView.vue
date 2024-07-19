@@ -1,5 +1,6 @@
 <template>
-  <div class="log-view">
+  <div class="log-view" v-if="!logList.length">Пожалуйста подождите...</div>
+  <div v-else class="log-view">
     <div v-for="(log, idx) in logList" :key="idx" class="log-item">
       {{ log }}
     </div>
@@ -22,7 +23,6 @@ onMounted(() => {
 <style scoped lang="scss">
 .log-view {
   width: 100%;
-  min-height: 200px;
   background-color: black;
   color: white;
   padding: 5px;

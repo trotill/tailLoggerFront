@@ -13,7 +13,7 @@
           ref="rowsCountRef"
           type="number"
           v-model="rowsCount"
-          :rules="[(value:string) => +value > 0 && +value<1000 || 'Допустим только диапазон 0 - 1000']"
+          :rules="[(value:string) => +value >= 0 && +value<=1000 || 'Допустим только диапазон 0 - 1000']"
           hint="Количество последних строк"
           class="delim"
         />
@@ -29,7 +29,7 @@
       <div class="view">
         <LogView
           :file-path="filePath"
-          :count-last="rowsCount"
+          :count-last="+rowsCount"
           ref="logViewRef"
         />
       </div>
