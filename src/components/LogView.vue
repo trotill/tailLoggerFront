@@ -27,6 +27,4 @@ onMounted(() => {
   color: white;
   padding: 5px;
 }
-.log-item {
-}
 </style>
